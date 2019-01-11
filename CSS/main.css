@@ -1,0 +1,330 @@
+	
+			
+			#Mail
+			{
+				
+				border: 1px solid #ccc;
+				padding: 5px;
+			}
+			.mail_body
+			{
+				color:grey;
+			}
+			.consise_body{
+				width:700px;
+				height:20px;
+				overflow:hidden;
+			}
+			#open_mail{
+				margin:0 auto;display:none;height:78%;overflow:auto;background-color:rgba(152, 152, 152, 0.07);border-radius:0px;
+			}
+			.navbar-inverse .navbar-toggle {
+				border-color:rgba(67, 191, 247, 0.58) ;
+			}
+				.navbar-inverse .navbar-nav>li>a {
+				color: black;
+			}
+			.navbar-inverse{
+				background-color:rgba(67, 191, 247, 0.58);
+				border-color:rgba(67, 191, 247, 0.58);
+			}
+			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+     border-color: rgba(0,0,0,0);
+	
+			}
+
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgba(0,0,0,0); 
+}
+			#compose_div,#sent_div,#trash_div,#config_div
+			{
+				background-color:white;
+				color:black;
+				border:none;
+				
+				
+			}
+			#inbox_div{
+				color:black;
+				border:none;
+				background-color:rgba(67, 191, 247, 0.58);
+				
+			}
+			
+			#compose_div:hover,#sent_div:hover,#trash_div:hover,#inbox_div:hover,#config_div:hover{
+				background-color:rgba(67, 191, 247, 0.58);
+			}
+			#deleteElement{
+				background-color:rgba(67, 191, 247, 0.58);
+			}
+			.well{
+				margin-bottom:0px;
+				background-color:rgba(67, 191, 247, 0.58);
+			}
+			#cross
+			{	float:right;
+				padding:12px;
+			}
+			@media screen and (max-width: 520px)
+			{
+				#mcompose_div,#minbox_div,#msent_div,#mtrash_div,#received_btn_nav,#sent_btn_nav,#mconfig_div
+				{
+					display:inline;
+					background-color:rgba(0, 0, 0, 0);
+					border:0px;
+					color:black;
+					font-size:14px;
+					
+				}
+				
+				#received_btn_nav:hover,#sent_btn_nav:hover,#mcompose_div:hover,#minbox_div:hover,#msent_div:hover,#mtrash_div:hover,#mconfig_div:hover
+				{
+					color:white;
+				}
+				#compose_div,#inbox_div,#sent_div,#trash_div,#sent_btn,#received_btn,#config_div
+				{
+					display:none;
+				}
+				#logo
+				{
+					display:none;
+				}
+				#compose
+				{
+				width:100%;
+				height:100%;
+				position:absolute;
+				top:0px;
+				left:0px;
+				background-color:rgba(67, 191, 247, 0.88);
+				display:none;
+				
+				}
+			
+			}
+			@media screen and (min-width: 520px)
+			{
+				#mcompose_div,#minbox_div,#msent_div,#mtrash_div,#received_btn_nav,#sent_btn_nav,#mconfig_div
+				{
+					display:none;
+					
+				}
+				#logo
+				{
+					display:inline;
+				}
+				#compose_div,#inbox_div,#sent_div,#trash_div,#received_btn,#sent_btn,#config_div
+				{
+					display:block;
+				}
+				#compose
+				{
+				right:20px;
+				background-color:rgba(67, 191, 247, 0.88);
+				position:fixed;
+				z-index:3;
+				display:none;
+				bottom:0px;
+				}
+				
+			}
+			
+/*file attachemnt*/
+			
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+/* Example stylistic flourishes */
+
+.fileContainer {
+    background: #f8f8f8;
+	
+    border-bottom: 0.2px solid #d1d1d1;
+    float: left;
+    padding: .6em;
+	position: absolute;
+    z-index: 100;
+	
+	
+   
+   
+}
+.fileContainer:hover
+{
+	background: rgb(193,193,193);
+}
+
+.fileContainer [type=file] {
+    cursor: pointer;
+}
+#send
+{
+	display:none;
+}
+
+#attachfilecontainer
+{
+	background-color:white;overflow:auto;
+}
+.attachfile
+{
+	background-color:white;margin-top:5px;border:0px;
+}
+#filecross
+{
+	display:inline;float:right;
+}
+.clip
+{
+	display:none;
+}
+.filedownload
+{
+	position:absolute;
+	bottom:5px;
+	right:50%;
+	
+	padding:10px;
+	
+}
+a{
+color:#449d44;	
+}
+a:hover{
+	color:#449d44;
+}
+
+#received_btn,#sent_btn
+{
+	background-color:white;
+	color:black;
+	border:0px;
+}
+#received_btn
+{
+	background-color:#91dafa;
+	color:white;
+}
+
+#received_btn:hover,#sent_btn:hover
+{
+	background-color:#91dafa;
+	color:white;
+}
+
+
+
+
+
+
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.formcontainer {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<web-app>
+	<filter>
+		<filter-name>Cookie_filter1</filter-name>
+		<filter-class>CheckCookie</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Cookie_filter1</filter-name> 
+		<url-pattern>/index</url-pattern>  
+	</filter-mapping>
+	<filter>
+		<filter-name>Cookie_filter2</filter-name>
+		<filter-class>CheckCookie</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Cookie_filter2</filter-name> 
+		<url-pattern>/drive</url-pattern>  
+	</filter-mapping>   
+	
+	  
+	<servlet> 
+		<servlet-name>Load_Data</servlet-name>
+		<servlet-class>LoadData</servlet-class>    
+	</servlet>    
+	<servlet-mapping> 
+		<servlet-name>Load_Data</servlet-name>  
+		<url-pattern>/index</url-pattern>  
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>Google_fetch</servlet-name>
+		<servlet-class>Gfetch</servlet-class>    
+	</servlet>          
+	<servlet-mapping> 
+		<servlet-name>Google_fetch</servlet-name>  
+		<url-pattern>/Gfetch</url-pattern>    
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>drive</servlet-name>  
+		<servlet-class>driveData</servlet-class>  
+	</servlet>          
+	<servlet-mapping>  
+		<servlet-name>drive</servlet-name> 
+		<url-pattern>/drive</url-pattern>
+	</servlet-mapping>             
+	  
+	<servlet>      
+		<servlet-name>OAuth</servlet-name>           
+		<servlet-class>GoogleOAuth</servlet-class>    
+	</servlet>        
+	<servlet-mapping> 
+		<servlet-name>OAuth</servlet-name>                          
+		<url-pattern>/googleOAuth</url-pattern>
+	</servlet-mapping>
+	<servlet>                           
+		<servlet-name>send</servlet-name>             
+		<servlet-class>SendMail</servlet-class>    
+	</servlet>        
+	<servlet-mapping>       
+		<servlet-name>send</servlet-name>                          
+		<url-pattern>/sendMail</url-pattern>          
+	</servlet-mapping>
+</web-app>                       
